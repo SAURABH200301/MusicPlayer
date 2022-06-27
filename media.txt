@@ -1,0 +1,6 @@
+media query
+
+1059px
+ change queue
+ bring slideshow in middle 
+ 

@@ -1,0 +1,66 @@
+#check1,#check2,#check3,#check4,#check5,#check6,#check7{
+	display: none;
+}
+
+@media only screen and (max-width: 1119px)
+{
+	#check1:checked ~ .s1{
+		height: 50px;
+		width: 100%;
+		font-size: 1rem;
+	}
+	#check2:checked ~ .s2{
+		height: 50px;
+		width: 100%;
+		font-size: 1rem;
+	}
+	#check3:checked ~ .s3{
+		height: 50px;
+		width: 100%;
+		font-size: 1rem;
+	}
+	#check4:checked ~ .s4{
+		height: 50px;
+		width: 100%;
+		font-size: 1rem;
+	}
+	#check5:checked ~ .s5{
+		height: 50px;
+		width: 100%;
+		font-size: 1rem;
+	}
+	#check6:checked ~ .s6{
+		height: 50px;
+		width: 100%;
+		font-size: 1rem;
+	}
+	#check7:checked ~ .s7{
+		height: 50px;
+		width: 100%;
+		font-size: 1rem;
+	}
+	.queue{
+	  margin-left: -10%;
+      width: 20%;
+      text-align: right;
+      display: block;
+	}
+	.queue_block
+	{
+
+		/*border: 2px dotted white;*/
+		margin-bottom: 20px;
+	}
+	.queue_block span{
+		display: none;
+	}
+	.song_name{
+		height: 0;
+		width: 0;
+		font-size: 0;
+	}
+	.cover{
+		width: 85%;
+		/*border: 2px dotted wheat;*/
+	}
+}

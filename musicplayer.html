@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">   <!-- for general css -->
+    <link rel="stylesheet" type="text/css" href="CSS/slideshow.css"> <!-- //for slideshow css -->
+    <link rel="stylesheet" type="text/css" href="CSS/media.css">  <!-- // for media query -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<title>My Playlist</title>
+</head>
+
+<body>
+    <header>
+     	
+     		<div class="logo"><i class="fa fa-play" style="font-size: 24px; font-size: 100px;"></i></div>
+            <span class="name">music<br> <span style="font-weight: 900;">Studio</span></span>
+     	    <a class="fav" href="#">Favourites</a>
+  
+  <form>
+        <div>
+         <button style="float:left;" class="search"type="submit"><i class="fa fa-search"></i></button>
+        <input type="text" name="search" placeholder="Search">
+        <button style="margin-left: -4px;" class="mic" type="submit"><i class="fa fa-microphone"></i>
+        </button>
+    </div>
+    </form>
+    <div class="pro">
+        <div class="bell-div">
+            <input type="checkbox" id="bell">
+            <label for="bell">
+     	         <!-- <button onclick="show()" class="notification" ><i class="fa fa-bell belll"></i></button> -->
+                 <i class="fa fa-bell belll"></i>
+           </label>
+        <div class="inner_div">
+            <div class="arrow"></div>
+                <p>No Notification</p>
+        </div>
+    </div>
+     	<img style="float:right;" class="profile" src="image/photo.jpg">
+     </div>
+</header>
+<!-- <div id="inner_div">
+                <p>No Notification</p>
+        </div> -->
+<div class="page">
+    <div class="cover">
+     <div>
+        <div style="display: flex; justify-content:center;">
+     	<div class="Carousel">
+        <div class="slides">
+            <!-- radio buttons start -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <!-- radio buttons end -->
+   
+            <!-- slides images start -->
+               <div class="slide first">
+                <img src="image/BrunoMars.jpg">
+               </div>
+               <div class="slide">
+                <img src="image/workout.jpg">
+               </div>
+               <div class="slide">
+                <img src="image/nayan.jpg">
+               </div>
+               <div class="slide">
+                <img src="image/onmyway.jpg">
+               </div>
+            <!-- slides images end -->
+            <!-- automatic navigation start -->
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            
+            <!-- automatic navigation end -->
+        </div>
+        <!-- matunal navigation start -->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+
+            <label for="radio3" class="manual-btn"></label>
+
+            <label for="radio4" class="manual-btn"></label>
+
+        </div>
+        <!-- matunal navigation end -->
+
+    </div>
+     </div>
+     	<div class="latest">
+     		<p>latest release</p>
+            <div class="latest-songs">
+               <div style="display: inline-flex; justify-content: space-between;">
+                <div class="blockk">
+                    <div>
+                    <img class="block" src="image/latest1.jpg"></div>
+                    <div>
+                        <p style="line-height: 0; font-weight: 900;">Pain</p><p style="line-height: 0;">Ryan Jones</p>
+                    </div>
+                    <div style="padding: 10px 10px 10px 10px; position: relative;">
+                        <input type="checkbox" id="info1">
+                        <label for="info1">
+                           <i class="fa fa-ellipsis-v"></i>
+                        </label>
+                        <div class="info i1">
+                            <span><i class="fa fa-play"></i>Play Now</span><hr>
+                            <span><i>+</i> Add to Queue</span><hr>
+                            <span><i><img style="height: 15px;" src="image/baseline1.png"></i>Add to Favourites</span><hr>
+                            <span><i><img style="height: 15px;" src="image/info.png"></i>Get Info</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blockk">
+                   <div>
+                    <img class="block" src="image/latest1.jpg"></div>
+                    <div>
+                        <p style="line-height: 0; font-weight: 900;">Pain</p><p style="line-height: 0;">Ryan Jones</p>
+                    </div>
+                    <div style="padding: 10px 10px 10px 10px; position: relative;">
+                        <input type="checkbox" id="info2">
+                        <label for="info2">
+                           <i class="fa fa-ellipsis-v"></i>
+                        </label>
+                        <div class="info i2">
+                            <span><i class="fa fa-play"></i>Play Now</span><hr>
+                            <span><i>+</i> Add to Queue</span><hr>
+                            <span><i><img style="height: 15px;" src="image/baseline1.png"></i>Add to Favourites</span><hr>
+                            <span><i><img style="height: 15px;" src="image/info.png"></i>Get Info</span>
+                        </div>
+                    </div>
+                </div>
+              </div><br>
+              <div style="display: inline-flex;">
+                <div class="blockk">
+                    <div>
+                    <img class="block" src="image/latest1.jpg"></div>
+                    <div>
+                        <p style="line-height: 0; font-weight: 900;">Pain</p><p style="line-height: 0;">Ryan Jones</p>
+                    </div>
+                    <div style="padding: 10px 10px 10px 10px; position: relative;">
+                        <input type="checkbox" id="info3">
+                        <label for="info3">
+                           <i class="fa fa-ellipsis-v"></i>
+                        </label>
+                        <div class="info i3">
+                            <span><i class="fa fa-play"></i>Play Now</span><hr>
+                            <span><i>+</i> Add to Queue</span><hr>
+                            <span><i><img style="height: 15px;" src="image/baseline1.png"></i>Add to Favourites</span><hr>
+                            <span><i><img style="height: 15px;" src="image/info.png"></i>Get Info</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blockk">
+                    <div>
+                    <img class="block" src="image/latest1.jpg"></div>
+                    <div>
+                        <p style="line-height: 0; font-weight: 900;">Pain</p><p style="line-height: 0;">Ryan Jones</p>
+                    </div>
+                    <div style="padding: 10px 10px 10px 10px; position: relative;">
+                        <input type="checkbox" id="info4">
+                        <label for="info4">
+                           <i class="fa fa-ellipsis-v"></i>
+                        </label>
+                        <div class="info i4">
+                            <span><i class="fa fa-play"></i>Play Now</span><hr>
+                            <span><i>+</i> Add to Queue</span><hr>
+                            <span><i><img style="height: 15px;" src="image/baseline1.png"></i>Add to Favourites</span><hr>
+                            <span><i><img style="height: 15px;" src="image/info.png"></i>Get Info</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+     	</div>
+       <div>
+          <p class="latest">Popular Artist</p>
+     	<div class="popular_artist">
+            
+     		<div class="artist-block">
+              <img class="artist" src="image/ed.jpg">  
+              <p class="artist_name latest">ed shreen</p>   
+            </div>
+            <div class="artist-block">
+              <img class="artist" src="image/coldplay.png">
+              <p class="artist_name latest">coldplay</p>
+            </div>
+            <div class="artist-block">
+              <img class="artist" src="image/zayn.jpg">
+              <p class="artist_name latest">zayn</p>
+            </div>
+            <div class="artist-block">
+              <img class="artist" src="image/BrunoMars.jpg">
+              <p class="artist_name latest">BrunoMars</p>
+            </div>
+            <div class="artist-block">
+              <img class="artist" src="image/carlie.jpg">
+              <p class="artist_name latest">Carlie Puth</p>
+            </div>
+            <div class="artist-block">
+              <img class="artist" src="image/id.jpg">
+              <p class="artist_name latest">Imagine Dragon</p>
+            </div>
+            <div class="artist-block">
+              <img class="artist" src="image/Marshmello.jpg">
+              <p class="artist_name latest">Marshmello</p>
+            </div>
+     	</div>
+    </div>
+    <p class="latest">stations</p>
+      <div class="stations">
+          <div class="music_station common">
+              
+          </div>
+          <div class="stations-div1 common ">
+              
+              <div id="love">love</div>
+          </div>
+          <div class="stations-div2 common">
+              
+              <div id="love">retro</div>
+          </div>
+           <div class="stations-div3 common">
+              
+              <div id="love">Chill</div>
+          </div>
+          <div class="stations-div4 common">
+              
+              <div id="love" class="work">WorkOut</div>
+          </div>
+           <div class="stations-div5 common">
+              
+              <div id="love">Rock</div>
+          </div>
+          <div class="stations-div6 common">
+              
+              <div id="love">Pop</div>
+          </div>
+      </div>
+      <!-- category -->
+      <div class="category">
+            <div class="roadtrip measure">
+                <div class="cate-name">Road Trip</div>
+            </div>
+            <div class="ele measure">
+                <div class="cate-name">Electronic</div>
+            </div>
+            <div class="party measure">
+                <div class="cate-name">Party</div>
+            </div>
+      </div>
+      <!-- latest english -->
+      <div>
+      <p class="latest">latest english</p>
+      </div>
+     	<div class="english fade">
+            <div class="song  latest  fade">  
+                   <div>
+                       <img class="img-measure" src="image/rock.jpg">
+                   </div>
+                   <p>Higher Power</p>
+                   <p>Cold Play</p>
+             </div>
+     		 <div class="song latest  fade">  
+                   <div>
+                       <img class="img-measure" src="image/Higher_power.png">
+                   </div>
+                   <p>Higher Power</p>
+                   <p>Cold Play</p>
+             </div>
+             <div class="song latest  fade">  
+                   <div>
+                       <img class="img-measure" src="image/holdon.jpg">
+                   </div>
+                   <p>Hold On</p>
+                   <p>Justin Bieber</p>
+             </div>
+             <div class="song latest  fade">  
+                   <div>
+                       <img class="img-measure" src="image/intention.jpg">
+                   </div>
+                   <p>Intention</p>
+                   <p>Justin Bieber</p>
+             </div>
+             <div class="song latest  fade">  
+                   <div>
+                       <img class="img-measure" src="image/onmyway.jpg">
+                   </div>
+                   <p>On My Way</p>
+                   <p>Alan Walker</p>
+             </div>
+             <div class="song latest fade">  
+                   <div>
+                       <img class="img-measure" src="image/dontwannaknow.png">
+                   </div>
+                   <p>Don't Wanna Know</p>
+                   <p>Maroon5</p>
+             </div>
+             <div class="song latest fade">  
+                   <div>
+                       <img class="img-measure" src="image/shapeofyou.png">
+                   </div>
+                   <p>Shape Of You</p>
+                   <p>Ed Sheeran </p>
+             </div>
+             <div class="song latest fade">  
+                   <div>
+                       <img class="img-measure" src="image/memories.jpg">
+                   </div>
+                   <p>Memories</p>
+                   <p>Maroon5</p>
+             </div>
+
+     	</div>
+        <p class="latest">latest hindi</p>
+     	<div class="hindi">
+     		<div class="song latest">  
+                  <div>
+                      <img class="img-measure" src="image/Jee-Ni-Karda.jpg">
+                  </div>
+                   <p>Jee Ni Karda</p>
+                   <p>Nikhita Gandhi</p>
+             </div>
+             <div class="song latest">  
+                   <div>
+                       <img class="img-measure" src="image/meterihogi.jpg">
+                   </div>
+                   <p>Main Teri Ho Gayi</p>
+                   <p>Millind Gaba</p>
+             </div>
+             <div class="song latest">  
+                   <div>
+                       <img class="img-measure" src="image/harfunmaula.jfif">
+                   </div>
+                   <p>Har Fun Maula</p>
+                   <p>Vishal Dadlani</p>
+             </div>
+            <div class="song latest">  
+                   <div>
+                       <img class="img-measure" src="image/OhSanam.jpg">
+                   </div>
+                   <p>Oh Sanam</p>
+                   <p>Shreya Ghoshal</p>
+             </div>
+             <div class="song latest">  
+                   <div>
+                       <img class="img-measure" src="image/nayan.jpg">
+                   </div>
+                   <p>Nayan</p>
+                   <p>Jubin Nautiyal</p>
+             </div>
+            <div class="song latest">  
+                   <div>
+                       <img class="img-measure" src="image/barrishkijaye.jfif">
+                   </div>
+                   <p>Baarish Ki Jaye</p>
+                   <p>B Praak</p>
+             </div>
+             <div class="song latest">  
+                   <div>
+                       <img class="img-measure" src="image/teramasoomchehra.jpg">
+                   </div>
+                   <p>Bewafa Tera Masoom Chehra</p>
+                   <p>Jubin Nautiyal</p>
+             </div>
+     	</div>
+     </div>
+   </div>
+   <div class="queue">
+        <p id="queue">Queue</p>
+
+        <div class="queue_block">
+            <span class="num">01</span>&nbsp;
+            <input type="checkbox" id="check1">
+             <label for="check1" class="checkbtn">
+                <!-- <div class="queue_imgg"> -->
+                 <img class="queue_img" src="image/BrunoMars.jpg">&nbsp;
+                 <!-- <img class="play" src="image/play.png"> -->
+               <!-- </div> -->
+             </label>
+            <span class="song_name s1" style="display:inline-block; line-height: 2px;">
+                <p class="queue_song">Talking to the Moon</p>
+                <p class="queue_artist">BrunoMars</p>
+            </span>
+            <!-- icon -->
+            <div class="heart"><button style="background-color: transparent;"><i  onclick="on_heart(1)" id="heart1" class="fa fa-heart-o "></i></button></div>
+
+        </div>
+
+        <div class="queue_block">
+            <span class="num">02</span>&nbsp;
+            <input type="checkbox" id="check2">
+             <label for="check2" class="checkbtn">
+                <img class="queue_img" src="image/dontwannaknow.png">&nbsp;
+            </label>
+            <span class="song_name s2" style="display:inline-block; line-height: 2px;">
+                <p class="queue_song">Don't Wanna Know</p>
+                <p class="queue_artist">Maroon5</p>
+            </span>
+            <!-- icon -->
+            <div class="heart"><button style="background-color: transparent;"><i  onclick="on_heart(2)" id="heart2" class="fa fa-heart-o "></i></button></div>
+
+
+        </div>
+
+        <div class="queue_block">
+            <span class="num">03</span>&nbsp;
+            <input type="checkbox" id="check3">
+             <label for="check3" class="checkbtn">
+            <img class="queue_img" src="image/onmyway.jpg">&nbsp;
+        </label>
+            <span class="song_name s3" style="display:inline-block; line-height: 2px;">
+                <p class="queue_song">On My Way</p>
+                <p class="queue_artist">Alan Walker</p>
+            </span>
+            <!-- icon -->
+            <div class="heart"><button style="background-color: transparent;"><i  onclick="on_heart(3)" id="heart3" class="fa fa-heart-o "></i></button></div>
+
+
+        </div>
+
+         <div class="queue_block">
+            <span class="num">04</span>&nbsp;
+            <input type="checkbox" id="check4">
+             <label for="check4" class="checkbtn">
+            <img class="queue_img" src="image/intention.jpg">&nbsp;
+        </label>
+            <span class="song_name s4" style="display:inline-block; line-height: 2px;">
+                <p class="queue_song">Intention</p>
+                <p class="queue_artist">Justin Beiber</p>
+            </span>
+            <!-- icon -->
+            <div class="heart"><button style="background-color: transparent;"><i  onclick="on_heart(4)" id="heart4" class="fa fa-heart-o "></i></button></div>
+
+        </div>
+
+        <div class="queue_block">
+            <span class="num">05</span>&nbsp;
+            <input type="checkbox" id="check5">
+             <label for="check5" class="checkbtn">
+            <img class="queue_img" src="image/meterihogi.jpg">&nbsp;
+        </label>
+            <span class="song_name s5" style="display:inline-block; line-height: 2px;">
+                <p class="queue_song">Main Teri Ho Gayi</p>
+                <p class="queue_artist">Millind Gaba</p>
+            </span>
+            <!-- icon -->
+            <div class="heart"><button style="background-color: transparent;"><i  onclick="on_heart(5)" id="heart5" class="fa fa-heart-o "></i></button></div>
+
+        </div>
+
+        <div class="queue_block" onclick="show_queue()">
+            <span class="num">06</span>&nbsp;
+            <input type="checkbox" id="check6">
+             <label for="check6" class="checkbtn">
+            <img class="queue_img" src="image/Higher_Power.png">&nbsp;
+        </label>
+            <span class="song_name s6" style="display:inline-block; line-height: 2px;">
+                <p class="queue_song">Higher power</p>
+                <p class="queue_artist">Cold Play</p>
+            </span>
+            <!-- icon -->
+            <div class="heart"><button style="background-color: transparent;"><i  onclick="on_heart(6)" id="heart6" class="fa fa-heart-o "></i></button></div>
+
+
+        </div>
+
+
+        <div class="queue_block">
+            <span class="num">07</span>&nbsp;
+            <input type="checkbox" id="check7">
+             <label for="check7" class="checkbtn">
+            <img class="queue_img" src="image/holdon.jpg">&nbsp;
+        </label>
+            <span class="song_name s7" style="display:inline-block; line-height: 2px;">
+                <p class="queue_song">Hold On</p>
+                <p class="queue_artist">Justin Bieber</p>
+            </span>
+            <!-- icon -->
+            <div class="heart"><button style="background-color: transparent;"><i  onclick="on_heart(7)" id="heart7" class="fa fa-heart-o "></i></button></div>
+
+
+        </div>
+
+     </div>
+</div>
+<div class="current_play">
+    <!-- <audio controls>
+        <source src="audio/Despacito.mp4" type="audio/mpeg">
+    </audio> -->
+   </div>
+
+   <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
